@@ -62,5 +62,9 @@ There will be a separate tutorial page for installing Linux distributions:
 * `ubuntu`: Unavailable
 * `void`: Unavailable
 
+As of currently there is alot of unavailable tutorials for Linux Distributions and for those, check: https://github.com/LinuxDroidMaster/Termux-Desktops/
+
+and for custom distributions, you may have to check "Proot-Distro Extra Tutorials" in this page.
+
 ## Proot-Distro Extra Tutorials
 **Still working on it**
