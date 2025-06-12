@@ -29,7 +29,7 @@ proot-distro list
 > and proot-distro now only provides one version of each linux distributions. for example, Proot-Distro will only have the latest long term support version for Ubuntu, and will only have the latest stable version of Debian and the other Linux Distributions.
 > As of 6/12/25, the versions of each distributions are:
 > * `adelie`: Adelie Linux
-> * `alpine`: Alpine Linux (edge) \-\-\- **Recommended for low disk space!**
+> * `alpine`: Alpine Linux (edge)
 > * `archlinux`: Arch Linux / Arch Linux 32 / Arch Linux ARM
 > * `artix`: Artix Linux (AArch64 only)
 > * `chimera`: Chimera Linux
@@ -61,3 +61,6 @@ There will be a separate tutorial page for installing Linux distributions:
 * `rockylinux`: Unavailable
 * `ubuntu`: Unavailable
 * `void`: Unavailable
+
+## Proot-Distro Extra Tutorials
+**Still working on it**
