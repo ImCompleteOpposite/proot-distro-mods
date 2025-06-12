@@ -1,5 +1,5 @@
 # Introduction:
-This is a tutorial and also a modification for Termux's proot distro. This repository provides detailed tutorials for using the proot-distro utility and provide modifications for the proot-distro utility.
+This repository provides detailed tutorials for using the proot-distro utility and provide modifications for the proot-distro utility.
 
 ## Prerequisites of the project
 <details><strong><summary>Install requirements</strong></summary>
@@ -150,9 +150,14 @@ d. paste the sha256 output to the "TARBALL_SHA256" of the respective distributio
 > I have some pre-made mods for it that will be mentioned below.
 
 ## Proot-Distro Mods
-These are mods created by the host of this repository, Hitomi Nikki. The installation is automatic and only requires to enter one or few commands to install. The scripts are free to use and free to view.
+These are mods created by the host of this repository, Hitomi Nikki. The installation is automatic and only requires to enter just one or few commands to install. The scripts are free to use and free to view.
 ### Add mirror links for older releases of distributions
 > [!NOTE]
-> As of currently... this mod only has Debian Bullseye for now.
-
-Has yet to be released!
+> As of currently... this mod only has Debian Bullseye.
+1. Type this command:
+```
+wget https://raw.githubusercontent.com/ImCompleteOpposite/proot-distro-mods/refs/heads/main/mods/addsomedistro/addsomedistro.sh
+chmod +x addsomedistro.sh
+./addsomedistro.sh
+rm -rf addsomedistro.sh
+```
