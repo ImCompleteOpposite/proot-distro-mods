@@ -36,13 +36,15 @@ proot-distro login debian --user hitominikki
 > or replace "hitominikki" with your desired username.
 
 ### Install a desktop environment
-<details><summary>XFCE4</summary>
 Use the following command to install the packages for the desktop environment:
   
 ```
 sudo apt install xfce4
 ```
-> At this point, please logout!
+> [!NOTE]
+> 
+
+> At this point onward, please logout!
 Use the following command to add a convenient way to login:
 ```
 nano startxfce.sh
@@ -60,4 +62,3 @@ To start desktop environment, please use this command every time:
 ```
 ./startxfce.sh
 ```
-</details>
