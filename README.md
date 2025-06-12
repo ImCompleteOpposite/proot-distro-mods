@@ -111,7 +111,7 @@ cd $PREFIX/etc/proot-distro
 ```
 nano debian11.sh
 ```
-5. Type this to file:
+5. Type this to file: (and replace any thing you desire)
 ```
 DISTRO_NAME="Debian (bookworm)"
 DISTRO_COMMENT="Stable release."
@@ -145,3 +145,14 @@ sha256sum /storage/emulated/0/termux/debian-11.tar.xz
 ```
 c. copy the output (exclude the filename. sha256 only)
 d. paste the sha256 output to the "TARBALL_SHA256" of the respective distribution and architecture.
+
+> [!NOTE]
+> I have some pre-made mods for it that will be mentioned below.
+
+## Proot-Distro Mods
+These are mods created by the host of this repository, Hitomi Nikki. The installation is automatic and only requires to enter one or few commands to install. The scripts are free to use and free to view.
+### Add mirror links for older releases of distributions
+> [!NOTE]
+> As of currently... this mod only has Debian Bullseye for now.
+
+Has yet to be released!
