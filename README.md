@@ -52,7 +52,7 @@ There will be a separate tutorial page for installing Linux distributions:
 * `archlinux`: Unavailabile
 * `artix`: Unavailable
 * `chimera`: Unavailable
-* `debian`: <a href="/distro/debian.md/">Available</a>
+* `debian`: <a href="/distro-tutorial/debian.md/">Available</a>
 * `deepin`: Unavailable
 * `fedora`: Unavailable 
 * `manjaro`: Unavailable
