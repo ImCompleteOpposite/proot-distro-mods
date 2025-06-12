@@ -1,4 +1,5 @@
-# First Steps:
+# Introduction:
+This is a tutorial and also a modification for Termux's proot distro. This repository provides detailed tutorials for using the proot-distro utility and provide modifications for the proot-distro utility.
 
 ## Prerequisites of the project
 <details><strong><summary>Install requirements</strong></summary>
