@@ -2,7 +2,7 @@
 # Do not modify this file as your changes will be overwritten on next update.
 # If you want customize installation, please make a copy.
 DISTRO_NAME="Ubuntu (23.10)"
-DISTRO_COMMENT="LTS release (Mantis)."
+DISTRO_COMMENT="Standard release (Mantis)."
 
 TARBALL_URL['aarch64']="https://github.com/termux/proot-distro/releases/download/v4.8.0/ubuntu-mantic-aarch64-pd-v4.8.0.tar.xz"
 TARBALL_SHA256['aarch64']="91acaa786b8e2fbba56a9fd0f8a1188cee482b5c7baeed707b29ddaa9a294daa"
