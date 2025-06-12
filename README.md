@@ -44,3 +44,20 @@ proot-distro list
 > * `void`: Void Linux
 
 For any additional information.. please check the proot-distro github: https://github.com/termux/proot-distro/
+
+## Installing the desired linux distribution
+There will be a separate tutorial page for installing Linux distributions:
+* `adelie`: Unavailable 
+* `alpine`: Unavailable
+* `archlinux`: Unavailabile
+* `artix`: Unavailable
+* `chimera`: Unavailable
+* `debian`: <a href="/distro/debian.md/">Available</a>
+* `deepin`: Unavailable
+* `fedora`: Unavailable 
+* `manjaro`: Unavailable
+* `opensuse`: Unavailable
+* `pardus`: Unavailable
+* `rockylinux`: Unavailable
+* `ubuntu`: Unavailable
+* `void`: Unavailable
