@@ -67,4 +67,81 @@ As of currently there is alot of unavailable tutorials for Linux Distributions a
 and for custom distributions, you may have to check "Proot-Distro Extra Tutorials" in this page.
 
 ## Proot-Distro Extra Tutorials
-**Still working on it**
+> [!NOTE]
+> use the following command "proot-distro" for available commands related to the proot-distro utility.
+
+#### I. If you desire to have another of the same distribution you can use the following command:
+```
+proot-distro install debian --override-alias debianalt
+```
+> [!NOTE]
+> You can replace "debianalt" with any alias like "ubuntu2" or your desired alias.
+
+to login to the container use the following command:
+```
+proot-distro login debianalt
+```
+```
+proot-distro login debianalt --user hitominikki
+```
+> [!NOTE]
+> replace "debianalt" with your desired alias and with the sh file!
+
+to remove the container use the following command:
+```
+proot-distro remove debianalt
+```
+> [!NOTE]
+> replace "debianalt" with your desired alias.
+
+#### II. Import custom distribution 
+> [!NOTE]
+> a rootfs file can be a live cloud image that is typically tar.xz
+
+1. Obtain a rootfs file (typically tar.xz) and copy the download link... or download the file and remember the file location path.
+2. Return to termux and use the following command:
+```
+cd $PREFIX/etc/proot-distro
+```
+3. Create a file "debian11.sh"
+> [!NOTE]
+> you can replace "debian11" with any alias!
+
+4. Use the following command to enter to the text editor
+```
+nano debian11.sh
+```
+5. Type this to file:
+```
+DISTRO_NAME="Debian (bookworm)"
+DISTRO_COMMENT="Stable release."
+
+TARBALL_URL['aarch64']="https://github.com/termux/proot-distro/releases/download/v4.17.3/debian-bookworm-aarch64-pd-v4.17.3.tar.xz"
+TARBALL_SHA256['aarch64']="3a841a794ae5999b33e33b329582ed0379d4f54ca62c6ce5a8eb9cff5ef8900b"
+TARBALL_URL['arm']="https://github.com/termux/proot-distro/releases/download/v4.17.3/debian-bookworm-arm-pd-v4.17.3.tar.xz"
+TARBALL_SHA256['arm']="85861ab139d4042302796cf46a93a9efbcb4808c06f7a1ae5fb71812f4564424"
+TARBALL_URL['i686']="https://github.com/termux/proot-distro/releases/download/v4.17.3/debian-bookworm-i686-pd-v4.17.3.tar.xz"
+TARBALL_SHA256['i686']="1fb3a6b0ea679e3797b35984049abf22bfe3b6ab79e9bb98cdfc54994712e1e4"
+TARBALL_URL['x86_64']="https://github.com/termux/proot-distro/releases/download/v4.17.3/debian-bookworm-x86_64-pd-v4.17.3.tar.xz"
+TARBALL_SHA256['x86_64']="675e534333adcbf369e97abda3088927651e5d91612ae5727c52ff2284f4b8c8"
+
+distro_setup() {
+	# Configure en_US.UTF-8 locale.
+	sed -i -E 's/#[[:space:]]?(en_US.UTF-8[[:space:]]+UTF-8)/\1/g' ./etc/locale.gen
+	run_proot_cmd DEBIAN_FRONTEND=noninteractive dpkg-reconfigure locales
+}
+
+ 
+```
+> [!NOTE]
+> unfortunately I have nothing to say for "distro_setup() {}" as it is distribution specific, you will have to conduct your own experiment.
+
+in regards to the "TARBALL_SHA256" you will have to do following:
+> [!NOTE]
+a. remember the file path or url of the rootfs file
+b. use the following command to generate a sha256sum:
+```
+sha256sum /storage/emulated/0/termux/debian-11.tar.xz
+```
+c. copy the output (exclude the filename. sha256 only)
+d. paste the sha256 output to the "TARBALL_SHA256" of the respective distribution and architecture.
