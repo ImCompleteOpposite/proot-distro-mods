@@ -77,6 +77,7 @@ nano startxfce.sh
 > the filename "startxfce.sh" is not strict and could be called any filename.
 
 in the GNU nano text editor please type:
+
 for all desktop environments BUT GNOME:
 ```
 kill -9 $(pgrep -f "termux.x11") 2>/dev/null
