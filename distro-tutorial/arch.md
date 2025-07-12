@@ -41,7 +41,7 @@ proot-distro login archlinux --user hitominikki
 
 ### Install a desktop environment
 > [!NOTE]
-> This tutorial is compatible with: GNOME,  XFCE4, KDE Plasma, Cinnamon, MATE, LXDE, LXQt, Sugar, WindowMaker, Enlightenment, and FVWM Crystal.
+> This tutorial is compatible with: GNOME,  XFCE4, and KDE Plasma.
 
 Use the following command to install the packages for the desktop environment:
   
