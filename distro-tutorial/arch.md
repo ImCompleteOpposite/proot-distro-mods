@@ -46,20 +46,13 @@ proot-distro login archlinux --user hitominikki
 Use the following command to install the packages for the desktop environment:
   
 ```
-sudo apt install xfce4
+yes | pacman -S xfce4 --disable-download-timeout
 ```
 > [!NOTE]
 > desire other desktop environment? replace "xfce4" with...
-> * `gnome`: dbus-x11 nano gnome gnome-shell gnome-terminal gnome-tweaks gnome-software nautilus gnome-shell-extension-manager gedit tigervnc-tools gnupg2
-> * `kde_plasma`: kde-plasma-desktop
+> * `gnome`: gnome dbus gnome-terminal gnome-tweaks
+> * `kde_plasma`: plasma-desktop sudo dbus kde-applications kde-graphics kde-utilities konsole thunar
 > * `cinnamon`: cinnamon
-> * `mate`: mate-desktop-environment
-> * `lxde`: lxde
-> * `lxqt`: lxqt
-> * `sugar`: sugar-session
-> * `enlightenment`: enlightenment
-> * `windowmaker`: wmaker
-> * `fvwm_crystal`: fvwm_crystal
 
 > if you desided to download gnome, please use this command after gnome is installed:
 ```
@@ -89,7 +82,7 @@ termux-x11 :0 >/dev/null &
 sleep 3
 am start --user 0 -n com.termux.x11/com.termux.x11.MainActivity > /dev/null 2>&1
 sleep 1
-proot-distro login debian --shared-tmp -- /bin/bash -c  'export PULSE_SERVER=127.0.0.1 && export XDG_RUNTIME_DIR=${TMPDIR} && su - hitominikki -c "env DISPLAY=:0 startxfce4"'
+proot-distro login archlinux --shared-tmp -- /bin/bash -c  'export PULSE_SERVER=127.0.0.1 && export XDG_RUNTIME_DIR=${TMPDIR} && su - hitominikki -c "env DISPLAY=:0 startxfce4"'
 exit 0
 ```
 for GNOME:
@@ -101,21 +94,14 @@ termux-x11 :0 >/dev/null &
 sleep 3
 am start --user 0 -n com.termux.x11/com.termux.x11.MainActivity > /dev/null 2>&1
 sleep 1
-proot-distro login debian --shared-tmp -- /bin/bash -c  'export PULSE_SERVER=127.0.0.1 && export XDG_RUNTIME_DIR=${TMPDIR} && sudo service dbus start && su - hitominikki -c "env DISPLAY=:0 gnome-shell --x11"'
+proot-distro login archlinux --shared-tmp -- /bin/bash -c 'export DISPLAY=:0 XDG_RUNTIME_DIR=${TMPDIR} PULSE_SERVER=127.0.0.1 XDG_CURRENT_DESKTOP="GNOME" && rm -rf /run/dbus/pid && dbus-daemon --system && su - hitominikki -c "env DISPLAY=:0 dbus-launch gnome-shell --x11"'
 exit 0
 ```
 > or replace "hitominikki" with your desired username!
 
 > and if you are using other desktop environment, replace "startxfce4" with..
 > * `kde_plasma`: startplasma-x11
-> * `cinnamon`: cinnamon-session
-> * `mate`: mate-session
-> * `lxde`: startlxde
-> * `lxqt`: startlxqt
-> * `sugar`: sugar
-> * `enlightenment`: enlightenment_start
-> * `windowmaker`: startwmaker
-> * `fvwm_crystal`: fvwm_crystal
+
 Grant the sh file execute permission:
 ```
 chmod +x startxfce.sh
