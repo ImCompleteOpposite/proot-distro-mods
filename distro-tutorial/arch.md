@@ -46,7 +46,7 @@ proot-distro login archlinux --user hitominikki
 Use the following command to install the packages for the desktop environment:
   
 ```
-yes | pacman -S xfce4 --disable-download-timeout
+pacman -S xfce4 --disable-download-timeout
 ```
 > [!NOTE]
 > desire other desktop environment? replace "xfce4" with...
