@@ -49,7 +49,7 @@ For any additional information.. please check the proot-distro github: https://g
 There will be a separate tutorial page for installing Linux distributions:
 * `adelie`: Unavailable 
 * `alpine`: Unavailable
-* `archlinux`: Unavailabile
+* `archlinux`: <a href="/distro-tutorial/arch.md/">Available</a>
 * `artix`: Unavailable
 * `chimera`: Unavailable
 * `debian`: <a href="/distro-tutorial/debian.md/">Available</a>
