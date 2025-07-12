@@ -52,7 +52,6 @@ yes | pacman -S xfce4 --disable-download-timeout
 > desire other desktop environment? replace "xfce4" with...
 > * `gnome`: gnome dbus gnome-terminal gnome-tweaks
 > * `kde_plasma`: plasma-desktop sudo dbus kde-applications kde-graphics kde-utilities konsole thunar
-> * `cinnamon`: cinnamon
 
 > if you desided to download gnome, please use this command after gnome is installed:
 ```
