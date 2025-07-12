@@ -13,9 +13,9 @@ proot-distro login archlinux
 ```
 Install necessary packages:
 ```
-pacman -Sy --disable-download-timeout
-pacman -Syu --disable-download-timeout 
-pacman -S sudo --disable-download-timeout
+yes | pacman -Sy --disable-download-timeout
+yes | pacman -Syu --disable-download-timeout 
+yes | pacman -S sudo --disable-download-timeout
 ```
 Create a user account:
 ```
