@@ -6,7 +6,7 @@ Use the following command to install the latest stable release of Arch:
 proot-distro install archlinux
 ```
 
-## Logging in to Debian
+## Logging in to Arch
 Use the following command to login to Arch as root:
 ```
 proot-distro login archlinux
@@ -55,8 +55,7 @@ pacman -S xfce4 --disable-download-timeout
 
 > if you desided to download gnome, please use this command after gnome is installed:
 ```
-for file in $(find /usr -type f -iname "*login1*"); do rm -rf $file
-done
+find /usr -type f -iname "*login1*" -exec rm -f {} \; && mkdir /run/dbus
 ```
 ## Boot into desktop environment
 > [!NOTE]
