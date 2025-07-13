@@ -1,7 +1,7 @@
 # This tutorial is for Ubuntu!
 
 ## Installing Ubuntu
-Use the following command to install the latest stable release of Debian:
+Use the following command to install the latest stable release of Ubuntu:
 ```
 proot-distro install ubuntu
 ```
