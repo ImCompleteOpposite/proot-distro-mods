@@ -52,10 +52,11 @@ apk add xfce4
 > desire other desktop environment? replace "xfce4" with...
 > * `none`: none
 
-> if you desided to download gnome, please use this command after gnome is installed: -->
+> if you desided to download gnome, please use this command after gnome is installed:
 ```
 find /usr -type f -iname "*login1*" -exec rm -f {} \; && mkdir /run/dbus
 ```
+-->
 
 ## Boot into desktop environment
 > [!NOTE]
