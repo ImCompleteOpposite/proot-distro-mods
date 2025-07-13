@@ -56,7 +56,7 @@ pacman -S xfce4 --disable-download-timeout
 ```
 find /usr -type f -iname "*login1*" -exec rm -f {} \; && mkdir /run/dbus
 ```
--->
+
 ## Boot into desktop environment
 > [!NOTE]
 > This took me a while but thanks to LinuxDroidMaster's Termux-Desktops Repository got this one optimized!
@@ -66,6 +66,8 @@ Use the following command to add a convenient way to login:
 ```
 nano startxfce.sh
 ```
+
+
 > [!NOTE]
 > the filename "startxfce.sh" is not strict and could be called any filename.
 
@@ -83,6 +85,7 @@ sleep 1
 proot-distro login archlinux --shared-tmp -- /bin/bash -c  'export PULSE_SERVER=127.0.0.1 && export XDG_RUNTIME_DIR=${TMPDIR} && su - hitominikki -c "env DISPLAY=:0 startxfce4"'
 exit 0
 ```
+<!--
 for GNOME:
 ```
 kill -9 $(pgrep -f "termux.x11") 2>/dev/null
@@ -95,10 +98,15 @@ sleep 1
 proot-distro login archlinux --shared-tmp -- /bin/bash -c 'export DISPLAY=:0 XDG_RUNTIME_DIR=${TMPDIR} PULSE_SERVER=127.0.0.1 XDG_CURRENT_DESKTOP="GNOME" && rm -rf /run/dbus/pid && dbus-daemon --system && su - hitominikki -c "env DISPLAY=:0 dbus-launch gnome-shell --x11"'
 exit 0
 ```
+-->
+
+
 > or replace "hitominikki" with your desired username!
 
+<!--
 > and if you are using other desktop environment, replace "startxfce4" with..
 > * `kde_plasma`: startplasma-x11
+-->
 
 Grant the sh file execute permission:
 ```
@@ -111,5 +119,3 @@ To start desktop environment, please use this command every time:
 ```
 ./startxfce.sh
 ```
-> [!NOTE]
-> or replace "startxfce.sh" with desired filename 
