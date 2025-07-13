@@ -1,4 +1,4 @@
-# This is for Debian 12 (Bookworm) prior or later releases could be compatible or not with this tutorial!
+# This tutorial is for Debian!
 
 ## Installing Debian
 Use the following command to install the latest stable release of Debian:
