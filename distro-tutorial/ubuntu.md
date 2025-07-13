@@ -30,7 +30,7 @@ and add "hitominikki ALL=(ALL:ALL) ALL" below the "root ALL=(ALL:ALL) ALL"
 > You are free to replace "hitominikki" to your desired username but must replace the "hitominikki" mentioned above in this tutorial to your desired username.
 
 ## Logging in to Ubuntu with a user
-Use the following command to login Debian as a user:
+Use the following command to login Ubuntu as a user:
 ```
 proot-distro login ubuntu --user hitominikki
 ```
