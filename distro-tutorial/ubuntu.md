@@ -1,7 +1,10 @@
 # This tutorial is for Ubuntu!
+- This tutorial was made in Ubuntu 24.04
+- This tutorial is expected to work with later versions of Ubuntu.
+- This tutorial is also expected to work with previous versions of Ubuntu (such as 23.10, 22.04, 20.04)
 
 ## Installing Ubuntu
-Use the following command to install the latest stable release of Ubuntu:
+Use the following command to install the latest stable LTS release of Ubuntu:
 ```
 proot-distro install ubuntu
 ```
