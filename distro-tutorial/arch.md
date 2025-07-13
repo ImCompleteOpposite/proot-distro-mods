@@ -32,7 +32,7 @@ and add "hitominikki ALL=(ALL:ALL) ALL" below the "root ALL=(ALL:ALL) ALL"
 > You are free to replace "hitominikki" to your desired username but must replace the "hitominikki" mentioned above in this tutorial to your desired username.
 
 ## Logging in to Arch with a user
-Use the following command to login Debian as a user:
+Use the following command to login Arch as a user:
 ```
 proot-distro login archlinux --user hitominikki
 ```
