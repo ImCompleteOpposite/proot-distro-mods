@@ -1,4 +1,8 @@
 # This tutorial is for Debian!
+This tutorial was made in Debian 12 (Bookworm)
+This tutorial is expected to work with later versions of Debian (such as Debian 13, Trixie)
+This tutorial is also expected to work with older
+versions of Debian (such as Debian 11, Bullseye)
 
 ## Installing Debian
 Use the following command to install the latest stable release of Debian:
