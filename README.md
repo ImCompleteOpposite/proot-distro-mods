@@ -59,7 +59,7 @@ There will be a separate tutorial page for installing Linux distributions:
 * `opensuse`: Unavailable
 * `pardus`: Unavailable
 * `rockylinux`: Unavailable
-* `ubuntu`: Unavailable
+* `ubuntu`: <a href="/distro-tutorial/ubuntu.md/">Available</a>
 * `void`: Unavailable
 
 As of currently there is alot of unavailable tutorials for Linux Distributions and for those, check: https://github.com/LinuxDroidMaster/Termux-Desktops/
