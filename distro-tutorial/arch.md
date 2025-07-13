@@ -1,7 +1,7 @@
 # This tutorial is for Arch Linux!
 
 ## Installing Arch
-Use the following command to install the latest stable release of Arch:
+Use the following command to install Arch:
 ```
 proot-distro install archlinux
 ```
