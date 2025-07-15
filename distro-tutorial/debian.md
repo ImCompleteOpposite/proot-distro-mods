@@ -117,6 +117,7 @@ exit 0
 > * `enlightenment`: enlightenment_start
 > * `windowmaker`: startwmaker
 > * `fvwm_crystal`: fvwm_crystal
+
 Grant the sh file execute permission:
 ```
 chmod +x startxfce.sh
