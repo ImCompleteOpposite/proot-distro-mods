@@ -17,22 +17,6 @@ yes | pacman -Sy --disable-download-timeout
 yes | pacman -Syu --disable-download-timeout 
 yes | pacman -S sudo --disable-download-timeout
 ```
-Grant user sudo privileges:
-```
-nano /etc/sudoers
-```
-then scroll down until you can find "root ALL=(ALL:ALL) ALL"
-and add "hitominikki ALL=(ALL:ALL) ALL" below the "root ALL=(ALL:ALL) ALL"
-> [!NOTE]
-> You are free to replace "hitominikki" to your desired username but must replace the "hitominikki" mentioned above in this tutorial to your desired username.
-
-## Logging in to Arch with a user
-Use the following command to login Arch as a user:
-```
-proot-distro login archlinux --user hitominikki
-```
-> [!NOTE]
-> or replace "hitominikki" with your desired username.
 
 ### Install a desktop environment
 > [!NOTE]
@@ -56,7 +40,24 @@ Create a user account:
 ```
 useradd -m -G wheel hitominikki
 passwd hitominikki
-``` 
+```
+Grant user sudo privileges:
+```
+nano /etc/sudoers
+```
+then scroll down until you can find "root ALL=(ALL:ALL) ALL"
+and add "hitominikki ALL=(ALL:ALL) ALL" below the "root ALL=(ALL:ALL) ALL"
+> [!NOTE]
+> You are free to replace "hitominikki" to your desired username but must replace the "hitominikki" mentioned above in this tutorial to your desired username.
+
+## Logging in to Arch with a user
+Use the following command to login Arch as a user:
+```
+proot-distro login archlinux --user hitominikki
+```
+> [!NOTE]
+> or replace "hitominikki" with your desired username. 
+
 ## Boot into desktop environment
 > [!NOTE]
 > This took me a while but thanks to LinuxDroidMaster's Termux-Desktops Repository got this one optimized!
