@@ -17,11 +17,6 @@ yes | pacman -Sy --disable-download-timeout
 yes | pacman -Syu --disable-download-timeout 
 yes | pacman -S sudo --disable-download-timeout
 ```
-Create a user account:
-```
-useradd -m -G wheel hitominikki
-passwd hitominikki
-```
 Grant user sudo privileges:
 ```
 nano /etc/sudoers
@@ -57,6 +52,11 @@ pacman -Sy xfce4 --disable-download-timeout
 ```
 find /usr -type f -iname "*login1*" -exec rm -f {} \; && mkdir /run/dbus
 ```
+Create a user account:
+```
+useradd -m -G wheel hitominikki
+passwd hitominikki
+``` 
 ## Boot into desktop environment
 > [!NOTE]
 > This took me a while but thanks to LinuxDroidMaster's Termux-Desktops Repository got this one optimized!
